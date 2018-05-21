@@ -1,0 +1,31 @@
+理想中的权限管理
+1.实现角色级权限 RBAC
+2.实现功能级、数据级权限
+3.简单易操作，应对各种需求
+
+相关操作界面
+1. 权限管理界面 角色管理界面  用户管理界面
+2.角色权限关系维护界面  用户和角色管理维护界面
+
+spring security介绍
+安全拦截器
+	1.认证管理
+	2.访问决策管理器
+	3.运行身份管理器
+	{basic digest x.509 ldap from}
+	
+权限拦截 流程
+	user --request--> filter chain {servlter filter1 .--dofilter-->。2.。} --doget-->servlet  --response--> user
+	
+	SecurityContextPersistenceFilter
+	BasicAuthenticationFilter
+	ExceptionTranslationFilter
+	LogoutFiler
+	SecurityContextHolderAwareRequestFilter
+	SessionManagementFilter
+	AbstractAuthentivationProcessingFilter
+	RememberMeAuthenticationFilter
+	FilterSecurityInterceptor
+	DefaultLoginPageGeneratingFilter
+	AnonymousAuthenticationFilter
+	FilterChainProxy
